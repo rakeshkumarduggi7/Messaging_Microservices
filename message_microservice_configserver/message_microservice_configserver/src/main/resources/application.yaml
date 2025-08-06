@@ -1,0 +1,7 @@
+spring:
+  application:
+   name: message_microservice_configserver
+  profiles:
+     active: native
+server:
+  port: 8081

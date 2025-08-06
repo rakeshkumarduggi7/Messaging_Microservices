@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="message_microservice_userservice" />
+        <module name="message_microservice_eurekaserver" />
+        <module name="message_microservice_configserver" />
+        <module name="message_microservice_messageService" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="message_microservice_configserver" options="-parameters" />
+      <module name="message_microservice_userservice" options="-parameters" />
+    </option>
+  </component>
+</project>
