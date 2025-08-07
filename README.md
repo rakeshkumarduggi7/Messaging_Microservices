@@ -23,7 +23,20 @@ use this url http://localhost:8082/userservice/getusers with the getmapping and 
 (note: the authorization tab should be in basic auth and your login detail deatails needs to typed )
 
 to get friends / users you have chatted with before:
-use this url http://localhost:8082/userservice/getusers with the getmapping and send.
+use this url http://localhost:8082/userservice/getfriends with the getmapping and send.
+(note: the authorization tab should be in basic auth and your login detail deatails needs to typed)
+
+to send message to users/friends:
+use this url http://localhost:8082/userservice/sendmessage with the postmapping and like signup 
+go to body tab and set to send as json file and type...
+{
+"tousername":"the user name you want to send message to",
+"message":""your message to the user"
+}
+type the username of the recipient of the message in tousername section and message in message section and send
 (note: the authorization tab should be in basic auth and your login detail deatails needs to typed )
+
+to view message/conversation with a specific user you had previously:
+use this url http://localhost:8082/userservice/viewmessage/[type the username] in postmapping and type the user name of the one you want to see messages , at the end of the url after / and send
 
 
